@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="base/pinned.xml"/>
+  <include name="bsp/pinned-nxp.xml"/>
+  <include name="bsp/pinned-tdx.xml"/>
+  <include name="bsp/pinned-rpi.xml"/>
+
+  <remote alias="repo" fetch="https://github.com/uptane" name="uptane"/>
+  <remote alias="repo" fetch="https://github.com/toradex" name="toradex-torizon"/>
+
+  <project name="meta-security" path="layers/meta-security" remote="yocto" revision="c62970fda82acf75035243766ecd195243e0f82a"/>
+  <project name="meta-updater" path="layers/meta-updater" remote="uptane" revision="eba4b74e6e30fb70d26b3034d18ece4d331fca04"/>
+  <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="f6b88c1d2f515ffac90457c0d649d6c805fff736"/>
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="cbde0286cb85bc445e70210b8df38f29b4784c08"/>
+  <project name="meta-toradex-torizon" path="layers/meta-toradex-torizon" remote="toradex-torizon" revision="d99c91862ee3308c227b58bf00b2bd45c21dab02">
+    <linkfile dest="setup-environment" src="scripts/setup-environment"/>
+  </project>
+</manifest>
