@@ -2,5 +2,5 @@
 <manifest>
   <remote fetch="https://github.com/agherzan/" name="agh"/>
 
-  <project name="meta-raspberrypi" path="layers/meta-raspberrypi" remote="agh" revision="0135a02ea577bd39dd552236ead2c5894d89da1d"/>
+  <project name="meta-raspberrypi" path="layers/meta-raspberrypi" remote="agh" revision="934064a01903b2ba9a82be93b3f0efdb4543a0e8"/>
 </manifest>
